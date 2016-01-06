@@ -148,9 +148,9 @@ class App:
             inp = []
             if self.adj.get() == "1":
                 if self.loccsv.get() == 0:
-                    inp = ["python", "pad.py", "-o", "auto", "-t", "template2.png", "-c", "calibration.csv", self.filename]
+                    inp = ["python", "saltpad.py", "-o", "auto", "-t", "template2.png", "-c", "calibration.csv", self.filename]
                 else:
-                    inp = ["python", "pad.py", "-o", "local.csv", "-t", "template2.png", "-c", "calibration.csv", self.filename]
+                    inp = ["python", "saltpad.py", "-o", "local.csv", "-t", "template2.png", "-c", "calibration.csv", self.filename]
             else:
                 if self.loccsv.get() == 0:
                     inp = ["./readsaltpad.sh", self.filename]
